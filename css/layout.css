@@ -24,13 +24,28 @@
 
 /* Positioning Classes */
 
-.border_right{
-  display: inline;
+.row{
+  clear: both;
+  margin: 2%;
+}
+
+.row:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+[class*="col-"] {
   float: left;
+  margin-left: 2%;
 }
 
-
-
-footer{
-  text-align: center;
+[class*="col-"]:first-child {
+  margin-left: 0;
 }
+
+.col-4 { width: 32%;}
+.col-8 {width: 66%;}
