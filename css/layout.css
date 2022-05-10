@@ -24,4 +24,13 @@
 
 /* Positioning Classes */
 
+.border_right{
+  display: inline;
+  float: left;
+}
 
+
+
+footer{
+  text-align: center;
+}
